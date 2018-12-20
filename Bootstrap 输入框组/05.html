@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 包含头部信息用于适应不同设备 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第五个例子-- 输入框组的下拉菜单按钮</title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    
+</head>
+<body>
+<div class="container">
+    <div style="padding:100px 100px 10px;">
+        <form class="bs-example bs-example-form" role="form">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button">
+                                下拉菜单
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">功能</a></li>
+                                <li><a href="#">另一个功能</a></li>
+                                <li><a href="#">其他</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">分离的链接</a></li>
+                            </ul>
+                        </div><!-- /btn-group -->
+                        <input type="text" class="form-control">
+                    </div> <!--  /input-group-->
+                </div> <!-- /.col-lg-6 -->
+                <div class="col-lg-6">
+                        <div class="input-group">
+                             <input type="text" class="form-control">
+                             <div class="input-group-btn">
+                                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button">
+                                        下拉菜单
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li><a href="#">功能</a></li>
+                                        <li><a href="#">另一个功能</a></li>
+                                        <li><a href="#">其他</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">分离的链接</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+                        </div> <!--  /input-group-->
+                    </div> <!-- /.col-lg-6 -->
+            </div> <!-- /.row -->
+        </form>
+    </div>
+</div>
+   <!-- JavaScript 放置在文档最后面可以使页面加载速度更快 -->
+        <script src="/bower_components/jquery/dist/jquery.min.js" charset="utf-8" type="text/javascript"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8" type="text/javascript"></script>
+</body>
+</html>
