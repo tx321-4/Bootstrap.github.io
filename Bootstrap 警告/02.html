@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 包含头部信息用于适应不同设备 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第二个例子-- 可取消的警告</title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-3">
+            <p><div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                    &times;
+                </button>
+                成功！ 很好地完成了提交
+            </div></p>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <p><div class="alert alert-info alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                    &times;
+                </button>
+                信息！请注意这个信息
+            </div></p>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <p><div class="alert alert-warning alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                    &times;
+                </button>
+                警告！请不要提交
+            </div></p>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <p><div class="alert alert-danger alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                    &times;
+                </button>
+                错误！请进行一些更改
+            </div></p>
+        </div>
+    </div>    
+</div>
+   <!-- JavaScript 放置在文档最后面可以使页面加载速度更快 -->
+        <script src="/bower_components/jquery/dist/jquery.min.js" charset="utf-8" type="text/javascript"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8" type="text/javascript"></script>
+</body>
+</html>
