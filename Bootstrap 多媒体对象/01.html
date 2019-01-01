@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 包含头部信息用于适应不同设备 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第一个例子-- 默认的媒体对象</title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    
+</head>
+<body>
+
+<div class="container">
+<h2>多媒体对象</h2>
+<p>使用 "media-left"类来设置多媒体对象左对齐。文本内容需要放在图片之后。</p>
+<p>"media-right"类用于设置多媒体对象右对齐。</p>
+<br />
+<!-- 左对齐 -->
+<div class="media">
+    <div class="media-left">
+        <img src="../images/kittens.jpg" alt="" class="media-object" style="width:60px;" />
+    </div>
+    <div class="media-body">
+        <h4 class="media-heading">左对齐</h4>
+        <p>这是一个实例文本。这是一个实例文本。这是一个实例文本。这是一个实例文本。这是一个实例文本。</p>
+    </div>
+</div>
+<hr>
+<!-- 右对齐 -->
+<div class="media">
+        <div class="media-body">
+            <h4 class="media-heading">右对齐</h4>
+            <p>这是一个实例文本。这是一个实例文本。这是一个实例文本。这是一个实例文本。这是一个实例文本。</p>
+        </div>
+        <div class="media-right">
+                <img src="../images/kittens.jpg" alt="" class="media-object" style="width:60px;" />
+        </div>
+    </div>
+</div>
+
+
+   <!-- JavaScript 放置在文档最后面可以使页面加载速度更快 -->
+        <script src="/bower_components/jquery/dist/jquery.min.js" charset="utf-8" type="text/javascript"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8" type="text/javascript"></script>
+</body>
+</html>
