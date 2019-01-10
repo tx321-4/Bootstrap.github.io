@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 包含头部信息用于适应不同设备 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第二个例子--工具提示插件方法</title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    
+</head>
+<body>
+
+<div class="container" style="padding:100px 0 10px;">
+    这是一个
+    <a href="#" class="tooltip-show" data-toggle="tooltip" title="show">Tooltip 方法 show</a>
+    这是一个
+    <a href="#" class="tooltip-hide" data-toggle="tooltip" data-placement="left" title="hide">Tooltip 方法 hide</a>
+    这是一个
+    <a href="#" class="tooltip-destroy" data-toggle="tooltip" data-placement="top" title="destroy">Tooltip 方法 destroy</a>
+    这是一个   
+    <a href="#" class="tooltip-toggle" data-toggle="tooltip" data-placement="bottom" title="toggle">Tooltip 方法 toggle</a>
+    <br /><br /><br /><br /><br />
+    <p class="tooltip-options">
+        这是一个
+        <a href="#" dat-toggle="tooltip" title="<h2>'am Header2 </h2>">Tooltip 方法 options</a>
+    </p>
+    
+    
+</div>
+
+
+   <!-- JavaScript 放置在文档最后面可以使页面加载速度更快 -->
+        <script src="/bower_components/jquery/dist/jquery.min.js" charset="utf-8" type="text/javascript"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(function(){ $(".tooltip-show").tooltip('show');})
+    $(function(){ $(".tooltip-hide").tooltip('hide');})
+    $(function(){ $(".tooltip-destroy").tooltip('destroy');})
+    $(function(){ $(".tooltip-toggle").tooltip('toggle');})
+    $(function(){$('.tooltip-options a').tooltip({html: true});});
+    </script>
+</body>
+</html>
