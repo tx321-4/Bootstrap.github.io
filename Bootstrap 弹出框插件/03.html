@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 包含头部信息用于适应不同设备 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第三个例子--弹出框插件事件</title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+<div class="container" style="padding:100px 50px 10px;">
+    <button type="button" class="btn btn-primary popover-show" title="Popover title" data-container="body" data-toggle="popover" data-placement="left" data-content="左侧的 Popover 中的一些内容 -- show 方法">
+        左侧的 Popover
+    </button>
+</div>
+   <!-- JavaScript 放置在文档最后面可以使页面加载速度更快 -->
+        <script src="/bower_components/jquery/dist/jquery.min.js" charset="utf-8" type="text/javascript"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function(){$(".popover-show").popover("show");});
+        $(function(){$(".popover-show").on('shown.bs.popover',function(){
+            alert("当显示时警告消息");
+        })});
+    </script>
+</body>
+</html>
