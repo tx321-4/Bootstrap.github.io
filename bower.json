@@ -1,0 +1,21 @@
+{
+  "name": "Bootstrap learn",
+  "homepage": "https://github.com/tx321-4/Bootstrap.github.io",
+  "authors": [
+    "shi_yi <shi_yidashi@163.com>"
+  ],
+  "description": "Bootstrap 学习记录",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "html5shiv": "^3.7.3"
+  }
+}
