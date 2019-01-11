@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 包含头部信息用于适应不同设备 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第四个例子-轮播插件事件</title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <style type="text/css">
+    .item>.text-center>img{max-width: 100%;}
+    </style>
+</head>
+<body>
+<div id="myCarousel" class="carousel slide">
+    <!-- 轮播（Carousel）指标  -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- 轮播（Carousel） 项目 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            
+            <div class="text-center"><img src="../images/slide1.png" alt="First slide" /></div>
+        </div>
+        <div class="item">
+            <div class="text-center"><img src="../images/slide2.png" alt="Second slide" /></div>
+        </div>
+        <div class="item">
+            <div class="text-center"><img src="../images/slide3.png" alt="Third slide" /></div>
+        </div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+   <!-- JavaScript 放置在文档最后面可以使页面加载速度更快 -->
+        <script src="/bower_components/jquery/dist/jquery.min.js" charset="utf-8" type="text/javascript"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(function(){
+        $('#myCarousel').on('slide.bs.carousel', function(){
+            alert("当调用Slide 实例 方法时立即触发该事件");
+        });
+    });
+    </script>
+</body>
+</html>
